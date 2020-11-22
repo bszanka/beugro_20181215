@@ -4,8 +4,7 @@ public class Utasszallito extends Repulogep{
     private int ferohely;
 
     public Utasszallito
-            (String gyarto, String tipus, double hossz, boolean sugarhajtasu, int ferohely)
-            throws IllegalArgumentException {
+            (String gyarto, String tipus, double hossz, boolean sugarhajtasu, int ferohely) {
         super(gyarto, tipus, hossz, sugarhajtasu);
         this.ferohely = ferohely;
     }

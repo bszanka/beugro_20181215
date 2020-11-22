@@ -8,11 +8,11 @@ public class Repulogep implements Comparable<Repulogep>{
     private double hossz;
     private boolean sugarhajtasu;
 
-    public Repulogep(String gyarto, String tipus, double hossz, boolean sugarhajtasu) throws IllegalArgumentException {
+    public Repulogep(String gyarto, String tipus, double hossz, boolean sugarhajtasu){
 //        A konstruktor dobjon IllegalArgumentExceptionkivételt
 //        „A hossz csak pozitív lehet!” üzenettel, ha a paramétereként megkapott hossz nem pozitív!
-        if(hossz < 0)   // lehet nem így kell kivételt dobni neki
-            System.err.println("A hossz csak pozitív lehet!");
+        if(hossz < 0)
+            throw new IllegalArgumentException("A hossz csak pozitív lehet!");
         this.gyarto = gyarto;
         this.tipus = tipus;
         this.hossz = hossz;

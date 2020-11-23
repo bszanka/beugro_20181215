@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c5ad047-354e-4d12-bd81-f8de3ad9ccab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adatok.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adatok2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/legiKozlekedes/Legitarsasag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/legiKozlekedes/Legitarsasag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repules/Repulogep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repules/Repulogep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repules/Utasszallito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repules/Utasszallito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teszt/RepuloTeszt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teszt/RepuloTeszt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +43,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kYN63WuDri2YJjjr1t7wQnmAX1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -58,13 +62,18 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="teszt.RepuloTeszt" />
       <module name="beugro_20181215" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value="adatok2.txt" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605887803866</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="#5 done">
+      <created>1606040441243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606040441243</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,15 +114,53 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="#5-nel jartam!" />
-    <option name="LAST_COMMIT_MESSAGE" value="#5-nel jartam!" />
+    <MESSAGE value="#5 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="#5 done" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606044836272">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1606044836272" />
     <state x="1245" y="269" width="565" height="606" key="#com.intellij.ide.util.MemberChooser" timestamp="1605887439950">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605873957187" />
     <state x="1245" y="269" width="565" height="606" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1605887439950" />
+    <state width="1874" height="274" key="GridCell.Tab.0.bottom" timestamp="1606044869482">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="274" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1606044869482" />
+    <state width="1874" height="274" key="GridCell.Tab.0.center" timestamp="1606044869481">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="274" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1606044869481" />
+    <state width="1874" height="274" key="GridCell.Tab.0.left" timestamp="1606044869481">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="274" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1606044869481" />
+    <state width="1874" height="274" key="GridCell.Tab.0.right" timestamp="1606044869481">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="274" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1606044869481" />
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1606044175737">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1606044175737" />
+    <state width="1874" height="340" key="GridCell.Tab.1.center" timestamp="1606044175737">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1606044175737" />
+    <state width="1874" height="340" key="GridCell.Tab.1.left" timestamp="1606044175737">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1606044175737" />
+    <state width="1874" height="340" key="GridCell.Tab.1.right" timestamp="1606044175737">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1606044175737" />
     <state x="449" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1606039124779">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -115,5 +169,25 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="952" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1605887817923" />
+    <state x="741" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606044290538">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="741" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053@0.27.1920.1053" timestamp="1606044290538" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/teszt/RepuloTeszt.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/teszt/RepuloTeszt.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

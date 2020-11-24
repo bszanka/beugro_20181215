@@ -1,4 +1,3 @@
-U;Bombardier;GTX1060;32,81;N;25
 U;Bombardier;Q400;32,81;N;78
 R;Boeing;747-8F;76,25;S
-R;Boeing;666-8F;66,25;N
+R;Boeing;747-8F;76,25;S

@@ -14,40 +14,34 @@ public class RepuloTeszt {
     public static void main(String[] args) {
         if(args[0].length() == 0)
             System.err.println("Nincs megadva parancssori argumentum!");
-        List<Repulogep> repgepek = new ArrayList<>();
         try {
+            List<Repulogep> repgepek = new ArrayList<>();
             Scanner fajl = new Scanner(new File(args[0]));
             while(fajl.hasNextLine()){
-                fajl.useDelimiter(";");
+                // NAGYON FONTOS! A SORNAK ÚJ SCANNER!
+                Scanner sor = new Scanner(fajl.nextLine());
+                sor.useDelimiter(";");
                 boolean utasszallito = false;
-                if(fajl.next().trim().endsWith("U"))
+                if(sor.next().trim().equals("U"))
                     utasszallito = true;
-                if(utasszallito)
-                    System.out.println("Utasszállító gép:");
-                else
-                    System.out.println("Repülőgép: ");
-                String gyarto = fajl.next();
-                System.out.println(gyarto);
-                String tipus = fajl.next();
-                System.out.println(tipus);
-                String  hossz = fajl.next();
-                System.out.println(hossz);
+                String gyarto = sor.next();
+                String tipus = sor.next();
+                // A PARSEDOUBLE NEM ESZI MEG, HA NEM PONT A TIZEDESVESSZŐ!
+                String hossz = sor.next().replaceAll(",",".");
                 boolean sugarhajtasu = false;
-                if(fajl.next().trim().endsWith("S"))
-                    sugarhajtasu = true;
-                if (sugarhajtasu)
-                    System.out.println("S");
-                else
-                    System.out.println("N");
+                if (sor.next().trim().equals("S"))
+                        sugarhajtasu = true;
                 String ferohely = "0";
-                if(utasszallito) {
-                    ferohely = fajl.next().trim();
-                    System.out.println("férőhely " + ferohely);
-                    repgepek.add(new Utasszallito(gyarto, tipus, Double.parseDouble(hossz), sugarhajtasu, Integer.parseInt(ferohely)));
-                    System.out.println("Új utasszállító létrehozva");
-                }else{
-                    repgepek.add(new Repulogep(gyarto, tipus, Double.parseDouble(hossz), sugarhajtasu));
-                    System.out.println("Új repülőgép létrehozva");
+                if(utasszallito)
+                    ferohely = sor.next().trim();
+                try {
+                    if(utasszallito)
+                        repgepek.add(new Utasszallito(gyarto, tipus, Double.parseDouble(hossz), sugarhajtasu, Integer.parseInt(ferohely)));
+                    else
+                        repgepek.add(new Repulogep(gyarto, tipus, Double.parseDouble(hossz), sugarhajtasu));
+                }
+                catch (IllegalArgumentException e) {
+                    System.err.println("debug: " + e.getMessage());
                 }
             }
             if(repgepek.isEmpty())
@@ -58,11 +52,8 @@ public class RepuloTeszt {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.err.println("Nem található ilyen nevű fájl!");
-        } catch (IllegalArgumentException e)
-        {
+        } catch (IllegalArgumentException e) {
             e.getMessage();
         }
-
-
     }
 }

@@ -1,5 +1,6 @@
 package teszt;
 
+import legiKozlekedes.Legitarsasag;
 import repules.Repulogep;
 import repules.Utasszallito;
 
@@ -44,10 +45,22 @@ public class RepuloTeszt {
                     System.err.println("debug: " + e.getMessage());
                 }
             }
-            if(repgepek.isEmpty())
-                System.out.println("Üres a repgépek lista.");
+//            if(repgepek.isEmpty())
+//                System.out.println("Üres a repgépek lista.");
+//            for (Repulogep r : repgepek) {
+//                System.out.println(r);
+//            }
+
+            Legitarsasag lt = new Legitarsasag(args[1].length() > 0 ? args[1] : "Unideb Airlines",
+                    repgepek.toArray(new Repulogep[repgepek.size()]));
             for (Repulogep r : repgepek) {
-                System.out.println(r);
+                lt.felvesz(r);
+            }
+            Scanner stdin = new Scanner(System.in);
+            int input = stdin.nextInt();
+            for (int i = 0; i < repgepek.size(); i++) {
+                if(repgepek.get(i) instanceof Utasszallito && ((Utasszallito)repgepek.get(i)).getFerohely() >= input)
+                    System.out.println(repgepek.get(i));
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

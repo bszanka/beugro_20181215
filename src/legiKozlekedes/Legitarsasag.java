@@ -15,7 +15,8 @@ import java.util.List;
 public class Legitarsasag implements Flotta {
 
     private String legitarsasag;
-    private List<Repulogep> flotta;
+    // MINDIG INICIALIZÁLNI KELL A LISTÁT! (new ...)
+    private List<Repulogep> flotta = new ArrayList<>();
 
     public Legitarsasag(String legitarsasag, Repulogep[] tomb) {
         this.legitarsasag = legitarsasag;
